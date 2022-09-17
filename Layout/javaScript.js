@@ -60,15 +60,36 @@ function article(n)
         }
 }
 
- 
-function layout_team7()
-{
-            navBar();
-            content();
-            header("Header");
-            article("aside");
-            header("Footer");
+// function layout_team7()
+// {
+//             navBar();
+            // content();
+            // header("Header");
+//             article("aside");
+//             header("Footer");
+// }
+
+// layout_team7();
+let team7={
+  
+   header: function(){
+       header("Header");
+   },
+   navBar: function(){
+      navBar();
+   },
+   content: function(){
+    content();
+},
+   article: function(n){
+    article(n);
 }
 
-layout_team7();
 
+};
+ 
+ team7.navBar();
+ team7.content();
+ team7.header("Header");
+ team7.article("aside");
+ team7.header("Footer");
